@@ -1,0 +1,102 @@
+body
+{
+    background-color: hsl(0, 0%, 94%);
+    font-family: Poppins;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 30px 30px 300px 30px; /* Arrondir seulement le coin supérieur gauche et inférieur gauche */
+    max-width: 900px;
+    height: 800px;
+    margin: auto;
+    padding: 15px;
+    /* Center this */
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.Title h1
+{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+    margin-top: 5%;
+    margin-left: 6%;   
+    margin-right: 6%;
+    display: inline-block; 
+    /* Add more space */
+    padding-right: 70px;
+}
+
+.Input input
+{
+    width: 18%;
+    height: 75px;
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 15px;
+    margin: 0;
+    margin-left: 6%;
+    margin-top: 1%;
+    padding-left: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    color: hsl(0, 0%, 44%);
+}
+
+.Button button
+{
+    background-image: url('./assets/images/icon-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsl(259, 100%, 65%);
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 100px;
+    width: 120px;
+    height: 120px;
+    margin: 0;
+    margin-top: 2%;
+    margin-left: 80%;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.Button button:hover
+{
+    background-color: hsl(0, 0%, 0%);
+    cursor: pointer;
+}
+.Text h2 {
+    font-size: 105px;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative; /* Ajoutez ceci pour utiliser les pseudo-éléments comme des éléments positionnés */
+  }
+  
+  .Text h2:before {
+    content: var(--content, "--"); /* Utilisez une variable CSS pour afficher "--" ou le contenu dynamique */
+    font-size: 100px;
+    font-weight: 700;
+    font-style: italic;
+    color: hsl(259, 100%, 65%);
+    margin-right: 10px;
+  }
+  
+  .Text.with-content h2:before {
+    content: ""; /* Contenu vide pour supprimer "--" lorsque la classe "with-content" est présente */
+  }
+  
+  .Text h2.with-content:before {
+    content: attr(data-content); /* Afficher le contenu de l'attribut data-content */
+  }
+
